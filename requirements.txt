@@ -2,8 +2,6 @@ absl-py
 adjustText
 aiohttp
 alembic
-anaconda-client
-anaconda-navigator
 annotated-types
 appdirs
 async-generator
