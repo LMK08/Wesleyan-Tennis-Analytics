@@ -1,6 +1,7 @@
 absl-py==2.0.0
 adjustText==0.8
-aiohttp @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_690hlorvpy/croot/aiohttp_1670009554132/work
+aiohttp 
+aiohttp_1670009554132/work
 aiosignal @ file:///tmp/build/80754af9/aiosignal_1637843061372/work
 alabaster @ file:///home/ktietz/src/ci/alabaster_1611921544520/work
 alembic==1.13.2
@@ -52,7 +53,7 @@ cattrs==22.2.0
 certifi @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_73k3qumdla/croot/certifi_1720453498134/work/certifi
 cffi @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_62rp5d8fd4/croots/recipe/cffi_1659598655556/work
 chardet @ file:///opt/concourse/worker/volumes/live/7e1102c4-8702-40f2-63d6-f260ce5f85e4/volume/chardet_1607706831384/work
-charset-normalizer==3.3.0
+charset-normalizer==2.1.1
 click==8.1.7
 cloudpickle @ file:///tmp/build/80754af9/cloudpickle_1632508026186/work
 cloudscraper==1.2.71
@@ -226,7 +227,7 @@ notebook==7.0.6
 notebook_shim @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_e9s6zsmlb7/croot/notebook-shim_1668160584892/work
 numba @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_c92mj5bbmo/croot/numba_1670258342205/work
 numexpr @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_cef3ah6r8w/croot/numexpr_1668713880672/work
-numpy==1.22.4
+numpy==2.0.1
 numpydoc @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_adnyzxppoz/croot/numpydoc_1668085907252/work
 oauthlib==3.2.2
 olefile @ file:///Users/ktietz/demo/mc3/conda-bld/olefile_1629805411829/work
