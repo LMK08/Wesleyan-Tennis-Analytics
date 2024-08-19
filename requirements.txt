@@ -7,7 +7,7 @@ appdirs==1.4.4
 async-generator==1.10
 async-lru==2.0.4
 attrs==23.1.0
-Automat==15.1.0
+Automat
 backcall==0.2.0
 backports.functools-lru-cache==1.6.4
 backports.tempfile==1.0
