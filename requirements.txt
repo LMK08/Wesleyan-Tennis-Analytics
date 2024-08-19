@@ -94,14 +94,9 @@ MarkupSafe
 matplotlib
 matplotlib-inline
 mccabe
-mkl-fft
-mkl-service
-ml-dtypes
-mpmath
 multidict
 munkres
 mypy-extensions
-navigator-updater
 nbconvert
 nbformat
 nest-asyncio
