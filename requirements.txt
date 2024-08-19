@@ -1,7 +1,6 @@
 absl-py==2.0.0
 adjustText==0.8
 aiohttp
-alabaster @ file:///home/ktietz/src/ci/alabaster_1611921544520/work
 alembic==1.13.2
 anaconda-client==1.11.0
 anaconda-navigator==2.1.1
