@@ -17,7 +17,6 @@ __pycache__/
 *.log
 
 # Ignore large dataset files
-*.csv
 *.xls
 *.xlsx
 *.json
