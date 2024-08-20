@@ -1,2 +1,2 @@
-web: gunicorn wes_tennis_dash:app
+web: gunicorn Building_Dashboard:app
 
