@@ -1,0 +1,38 @@
+# Ignore Python bytecode
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Ignore log files
+*.log
+
+# Ignore virtual environments
+venv/
+.venv/
+
+# Ignore version control directories
+.git/
+.gitignore
+
+# Ignore local environment settings
+.env
+
+# Ignore macOS-specific files
+.DS_Store
+
+# Ignore documentation
+docs/
+*.md
+
+# Ignore any large data files
+data/
+
+# Ignore any NLTK corpora or data files not needed
+nltk_data/
+
+# Ignore other unnecessary files
+.pytest_cache/
+.ipynb_checkpoints/
+
+
