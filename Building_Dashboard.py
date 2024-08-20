@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[47]:
+# In[1]:
 
 
 import dash
@@ -13,7 +13,7 @@ import plotly.express as px
 import os
 
 
-# In[48]:
+# In[2]:
 
 
 
@@ -30,27 +30,27 @@ singles_matches_df = pd.read_csv(os.path.join('data', 'singles_matches_df.csv'))
 
 
 
-# In[49]:
+# In[3]:
 
 
 server_df
 
 
-# In[50]:
+# In[4]:
 
 
 # Rename the column 'Unnamed: 0' to 'Player'
 server_df.rename(columns={'Unnamed: 0': 'Player'}, inplace=True)
 
 
-# In[51]:
+# In[5]:
 
 
 
 
 # Initialize the Dash app
 app = dash.Dash(__name__)
-server = app.server  # This line allows deployment services to recognize the Flask app
+
 
 # Extract columns from each DataFrame
 server_columns = list(server_df.columns)
