@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[13]:
+# In[32]:
 
 
 import dash
@@ -11,36 +11,36 @@ import pandas as pd
 import plotly.express as px
 
 
-# In[14]:
+# In[33]:
 
 
 # Load data
-server_df = pd.read_csv('/Users/lkimball/Desktop/Wesleyan_Tennis_Analytics/server_df.csv')
-returner_df = pd.read_csv('/Users/lkimball/Desktop/Wesleyan_Tennis_Analytics/returner_df.csv')
-s1_df = pd.read_csv('/Users/lkimball/Desktop/Wesleyan_Tennis_Analytics/S+1_df.csv')
-singles_matches_df = pd.read_csv('/Users/lkimball/Desktop/Wesleyan_Tennis_Analytics/singles_matches_df.csv')
+server_df = pd.read_csv('data/server_df.csv')
+returner_df = pd.read_csv('data/returner_df.csv')
+s1_df = pd.read_csv('data/S+1_df.csv')
+singles_matches_df = pd.read_csv('data/singles_matches_df.csv')
 
 
-# In[15]:
+# In[ ]:
 
 
-singles_matches_df
 
 
-# In[16]:
+
+# In[34]:
 
 
 server_df
 
 
-# In[17]:
+# In[35]:
 
 
 # Rename the column 'Unnamed: 0' to 'Player'
 server_df.rename(columns={'Unnamed: 0': 'Player'}, inplace=True)
 
 
-# In[18]:
+# In[36]:
 
 
 
