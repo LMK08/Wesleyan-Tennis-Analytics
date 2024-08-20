@@ -1,24 +1,27 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[32]:
+# In[47]:
 
 
 import dash
-from dash import dcc, html
+import dash_core_components as dcc
+import dash_html_components as html
 from dash.dependencies import Input, Output
 import pandas as pd
 import plotly.express as px
+import os
 
 
-# In[33]:
+# In[48]:
+
 
 
 # Load data
-server_df = pd.read_csv('data/server_df.csv')
-returner_df = pd.read_csv('data/returner_df.csv')
-s1_df = pd.read_csv('data/S+1_df.csv')
-singles_matches_df = pd.read_csv('data/singles_matches_df.csv')
+server_df = pd.read_csv(os.path.join('data', 'server_df.csv'))
+returner_df = pd.read_csv(os.path.join('data', 'returner_df.csv'))
+s1_df = pd.read_csv(os.path.join('data', 'S+1_df.csv'))
+singles_matches_df = pd.read_csv(os.path.join('data', 'singles_matches_df.csv'))
 
 
 # In[ ]:
@@ -27,34 +30,32 @@ singles_matches_df = pd.read_csv('data/singles_matches_df.csv')
 
 
 
-# In[34]:
+# In[49]:
 
 
 server_df
 
 
-# In[35]:
+# In[50]:
 
 
 # Rename the column 'Unnamed: 0' to 'Player'
 server_df.rename(columns={'Unnamed: 0': 'Player'}, inplace=True)
 
 
-# In[36]:
+# In[51]:
 
 
 
 
 # Initialize the Dash app
 app = dash.Dash(__name__)
+server = app.server  # This line allows deployment services to recognize the Flask app
 
 # Extract columns from each DataFrame
 server_columns = list(server_df.columns)
 returner_columns = list(returner_df.columns)
 s1_columns = list(s1_df.columns)
-
-# Assuming you have already renamed the column:
-# server_df.rename(columns={'Unnamed: 0': 'Player'}, inplace=True)
 
 # Update the dropdowns to reference the new column name
 app.layout = html.Div([
@@ -115,7 +116,6 @@ app.layout = html.Div([
         dcc.Graph(id='s1-graph'),
     ]),
 ])
-
 
 @app.callback(
     [Output('server-graph', 'figure'),
@@ -218,15 +218,8 @@ def update_graphs(selected_player1, selected_player2, selected_server_metrics, s
 
     return server_fig, returner_fig, s1_fig
 
-
 if __name__ == '__main__':
     app.run_server(debug=True)
-
-
-# In[ ]:
-
-
-
 
 
 # In[ ]:
