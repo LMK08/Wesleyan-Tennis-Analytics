@@ -1,2 +1,2 @@
-web: gunicorn Building_Dashboard:app.server
+web: gunicorn Building_Dashboard:app
 
