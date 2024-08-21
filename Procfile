@@ -1,2 +1,2 @@
-web: gunicorn Building_Dashboard:app.server
+web: gunicorn -b 0.0.0.0:$PORT wes-tennis-dashboard-dev:app
 
