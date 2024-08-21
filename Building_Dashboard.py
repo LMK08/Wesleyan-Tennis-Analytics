@@ -13,9 +13,6 @@ import plotly.express as px
 import os
 
 
-# In[2]:
-
-
 
 # Load data
 server_df = pd.read_csv(os.path.join('data', 'server_df.csv'))
@@ -23,27 +20,8 @@ returner_df = pd.read_csv(os.path.join('data', 'returner_df.csv'))
 s1_df = pd.read_csv(os.path.join('data', 'S+1_df.csv'))
 singles_matches_df = pd.read_csv(os.path.join('data', 'singles_matches_df.csv'))
 
-
-# In[ ]:
-
-
-
-
-
-# In[3]:
-
-
-server_df
-
-
-# In[4]:
-
-
 # Rename the column 'Unnamed: 0' to 'Player'
 server_df.rename(columns={'Unnamed: 0': 'Player'}, inplace=True)
-
-
-# In[5]:
 
 
 
@@ -220,16 +198,5 @@ def update_graphs(selected_player1, selected_player2, selected_server_metrics, s
 
 if __name__ == "__main__":
     app.run_server(debug=True, host='0.0.0.0', port=8080)
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
 
 
