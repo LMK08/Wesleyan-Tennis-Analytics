@@ -218,8 +218,8 @@ def update_graphs(selected_player1, selected_player2, selected_server_metrics, s
 
     return server_fig, returner_fig, s1_fig
 
-if __name__ == '__main__':
-    app.run_server(debug=True)
+if __name__ == "__main__":
+    app.run_server(debug=True, host='0.0.0.0', port=8080)
 
 
 # In[ ]:
